@@ -1,0 +1,27 @@
+{
+  "name": "1PGM-cagri-avci-UIPROTO-opdracht2-prototype",
+  "version": "1.0.0",
+  "description": "Cagri Avci",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx @11ty/eleventy",
+    "dev": "npx @11ty/eleventy --serve",
+    "start": "npm run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pgmgent-2021-uip/exercises-pgm-cagravci.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pgmgent-2021-uip/exercises-pgm-cagravci/issues"
+  },
+  "homepage": "https://github.com/pgmgent-2021-uip/exercises-pgm-cagravci#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.1",
+    "@11ty/eleventy-navigation": "^0.1.6"
+  }
+}
