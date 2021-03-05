@@ -8,6 +8,7 @@
 
 // 2. Vendors
 @import
+  'vendors/font',
   'vendors/normalize';
 
 // 3. Base stuff
@@ -24,6 +25,7 @@
 
 // 5. Components
 @import
+  'components/image',
   'components/button';
 
 // 6. Page-specific styles
@@ -33,3 +35,5 @@
 // 7. Themes
 @import
   'themes/default';
+
+  
