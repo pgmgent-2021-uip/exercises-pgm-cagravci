@@ -14,8 +14,7 @@
         {{ content | safe }}
     </main>
 
-    <footer class="footer">
-        Copyright {{ helpers.currentYear() }} @ Cagri Avci
-    </footer>
+    {% include "_components/footer.njk" %}
+
 </body>
 </html>

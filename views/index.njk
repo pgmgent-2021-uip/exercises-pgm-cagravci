@@ -1,6 +1,9 @@
 ---
 layout: base
 title: Home
+eleventyNavigation:
+    key: Home
+    order: 1
 ---
 
 <h1 class="sr-only">My Walking App</h1>
@@ -9,7 +12,7 @@ title: Home
     <div class="hero__decoration col-8">
         <img
             class="hero__decoration__image"
-            src="https://via.placeholder.com/1920x1080"/>
+            src="/assets/img/walkingpad.jpg"/>
     </div>
 
     <article class="hero__content col-4">
@@ -18,18 +21,44 @@ title: Home
         </h2>
 
         <ul class="hero__content__list">
-            <li class="hero__content__list__item">
-                <small class="detail-title">Friends</small>
+            {% for hero_item in hero_list %}
+                <li class="hero__content__list__item">
+                    <small class="detail-title">{{ hero_item.small }}</small>
 
-                <strong class="base-title">Make new friends while walking!</strong>
+                    <strong class="base-title">{{ hero_item.title }}</strong>
 
-                <p class="hero__content__list__item__text">
-                    Cillum velit commodo aliqua pariatur duis laborum consequat exercitation in esse ex.
-                </p>
-            </li>
+                    <p class="hero__content__list__item__text">
+                        {{ hero_item.subtitle }}
+                    </p>
+                </li>
+            {% endfor %}
         </ul>
     </article>
 </section>
+
+{% if collections.features | length %}
+    <section class="container">
+        <h2>Features</h2>
+
+        <ul>
+            {% for feature in collections.features %}
+                    <li>
+                        <img 
+                            class=""
+                            src="{{ feature.data.img }}"/>
+                        
+                        <strong>{{ feature.data.title }}</strong>
+
+                        <small>{{ feature.data.subtitle }}</small>
+
+                        <a href="{{ feature.url }}">
+                            {{ feature.data.title }}
+                        </a>
+                    </li>
+            {% endfor %}
+        </ul>
+    </section>
+{% endif %}
 
 {% if quotes | length  %}
     <section class="container">
@@ -51,18 +80,43 @@ title: Home
     </section>
 {% endif %}
 
-{% if collections.features | length %}
+{% if customers | length  %}
     <section class="container">
-        <h2>Features</h2>
+        <h2>Klanten</h2>
 
-        {% for feature in collections.features %}
-            <ul>
-                <li>
-                    <a href="{{ feature.url }}">
-                        {{ feature.data.title }}
-                    </a>
-                </li>
-            </ul>
-        {% endfor %}
+        <ul>
+            {% for customer in customers %}
+                    <li>
+                        <figure>
+                            <p>{{ customer.name }}</p>
+                            <img 
+                                class=""
+                                src="assets/img/{{ customer.img }}.jpg"/>
+                        </figure>
+                    </li>
+            {% endfor %}
+        <ul>
+    </section>
+{% endif %}
+
+{% if blogs | length  %}
+    <section class="container">
+        <h2>Blog</h2>
+
+        <ul>
+            {% for blog in blogs %}
+                    <li>
+                        <figure>
+                            <img 
+                                class=""
+                                src="assets/img/{{ blog.img }}.jpg"/>
+                            
+                            <strong>{{ blog.title }}</strong>
+
+                            <small>{{ blog.subtitle }}</small>
+                        </figure>
+                    </li>
+            {% endfor %}
+        <ul>
     </section>
 {% endif %}

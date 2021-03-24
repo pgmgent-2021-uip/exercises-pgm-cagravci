@@ -1,0 +1,77 @@
+{% set navPages = collections.all | eleventyNavigation %}
+
+
+<footer class="footer">
+    <h2>explord</h2>
+
+    <div>
+        <strong>A travelers blog</strong>
+
+        <small>our main focus is to provide high quality objective and informative traveling content from over the world</small>
+    </div>
+
+    <div>
+         <strong>Navigation</strong>
+        <ul>
+            {% for navItem in navPages %}
+            <li>
+                <a href="{{ navItem.url }}">
+                    {% if page.url === navItem.url %}
+                        <strong>
+                            {{ navItem.title }}
+                        </strong>
+                    {% else %}
+                        {{ navItem.title }}
+                    {% endif %}
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+     <div>
+         <strong>Links</strong>
+        <ul>
+            {% for navItem in navPages %}
+            <li>
+                <a href="{{ navItem.url }}">
+                    {% if page.url === navItem.url %}
+                        <strong>
+                            {{ navItem.title }}
+                        </strong>
+                    {% else %}
+                        {{ navItem.title }}
+                    {% endif %}
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div>
+         <strong>Follow us</strong>
+
+        <ul>
+            {% for navItem in navPages %}
+            <li>
+                <a href="{{ navItem.url }}">
+                   <img 
+                        class=""
+                        src="{{ navItem.url }}"
+                        alt="{{ navItem.url }}"/>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div>
+        <strong>Our portfolio</strong>
+
+        <a href="www.google.com" target="_blank">
+            <small>www.google.com</small>
+        </a>
+    </div>
+   
+            Copyright {{ helpers.currentYear() }} @ Cagri Avci
+</footer>

@@ -1,28 +1,30 @@
 {
-  "name": "1PGM-cagri-avci-UIPROTO-opdracht2-prototype",
+  "name": "my-walking-app",
   "version": "1.0.0",
-  "description": "Cagri Avci",
+  "description": "A simple landing page made with Eleventy",
   "main": "index.js",
   "scripts": {
-    "eleventy": "npx @11ty/eleventy",
+    "eleventy": "npx eleventy",
     "sass": "sass --style=compressed src/style/main.scss src/main.css",
     "watch:sass": "npm run sass -- --watch",
-    "watch:eleventy": "eleventy --serve",
+    "watch:eleventy": "npx eleventy --serve",
     "start": "npm-run-all sass --parallel watch:*",
-    "build": "npm run eleventy",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run eleventy && npm run sass"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pgmgent-2021-uip/exercises-pgm-cagravci.git"
+    "url": "git+https://github.com/pgmgent-2021-uip/exercises-adriaanglibert.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "Walking",
+    "Eleventy"
+  ],
+  "author": "Cagri Avci",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pgmgent-2021-uip/exercises-pgm-cagravci/issues"
+    "url": "https://github.com/pgmgent-2021-uip/exercises-adriaanglibert/issues"
   },
-  "homepage": "https://github.com/pgmgent-2021-uip/exercises-pgm-cagravci#readme",
+  "homepage": "https://github.com/pgmgent-2021-uip/exercises-adriaanglibert#readme",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1",
     "@11ty/eleventy-navigation": "^0.1.6",
