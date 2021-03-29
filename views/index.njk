@@ -40,9 +40,9 @@ eleventyNavigation:
     <section class="container">
         <h2>Features</h2>
 
-        <ul>
+        <ul class="h-list">
             {% for feature in collections.features %}
-                    <li>
+                    <li class="h-list__item card-features">
                         <img 
                             class=""
                             src="{{ feature.data.img }}"/>
@@ -64,16 +64,19 @@ eleventyNavigation:
     <section class="container">
         <h2>Quotes</h2>
 
-        <ul>
+        <ul class="h-list">
             {% for quote in quotes %}
-                    <li>
-                        <figure>
-                            <blockquote>
-                                "{{ quote.quote }}"
-                            </blockquote>
-
-                            <figcaption>— {{ quote.author }}</figcaption>
-                        </figure>
+                    <li class="h-list__item card-quotes">
+                        <blockquote>
+                            "{{ quote.quote }}"
+                        </blockquote>
+                        
+                        <figcaption>
+                            <img
+                                src="/assets/img/{{ quote.img }}"
+                                class=""/>
+                            <p>~ {{ quote.author }}</p>
+                        </figcaption>
                     </li>
             {% endfor %}
         <ul>
@@ -84,15 +87,13 @@ eleventyNavigation:
     <section class="container">
         <h2>Klanten</h2>
 
-        <ul>
+        <ul class="h-list">
             {% for customer in customers %}
-                    <li>
-                        <figure>
-                            <p>{{ customer.name }}</p>
+                    <li class="h-list__item--xl card-customers">
+                        <a href="#">
                             <img 
-                                class=""
-                                src="assets/img/{{ customer.img }}.jpg"/>
-                        </figure>
+                                src="/assets/img/{{ customer.img }}"/>
+                        </a>
                     </li>
             {% endfor %}
         <ul>
@@ -103,18 +104,16 @@ eleventyNavigation:
     <section class="container">
         <h2>Blog</h2>
 
-        <ul>
+        <ul class="h-list">
             {% for blog in blogs %}
-                    <li>
-                        <figure>
-                            <img 
-                                class=""
-                                src="assets/img/{{ blog.img }}.jpg"/>
-                            
-                            <strong>{{ blog.title }}</strong>
+                    <li class="h-list__item card-posts">
+                        <img 
+                            class=""
+                            src="/assets/img/{{ blog.img }}"/>
+                        
+                        <strong>{{ blog.title }}</strong>
 
-                            <small>{{ blog.subtitle }}</small>
-                        </figure>
+                        <small>{{ blog.subtitle }}</small>
                     </li>
             {% endfor %}
         <ul>

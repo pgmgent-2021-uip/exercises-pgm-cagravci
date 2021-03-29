@@ -1,0 +1,86 @@
+.card-features {
+    padding: 0.4rem 0.6rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    & strong {
+        padding-top: 1.8rem;
+        padding-bottom: 1rem;
+        flex-basis: 100%;
+    }
+
+    & small {
+        flex-basis: 100%;
+    }
+
+    & a {
+        margin: 1.2rem 1.6rem;
+        border: 3px solid #ff0000;
+        padding: 0.8rem 1rem;
+    }
+}
+
+.card-quotes {
+    padding: 0.4rem 0.6rem;
+
+    & blockquote {
+        margin:0;
+        margin-bottom: 1rem;
+        text-align: left;
+        border-left: solid 1px black;
+        padding: 0.4rem;
+    }
+    
+    & figcaption {
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+
+       & img {
+           width: 2rem;
+           height: 2rem;
+           border-radius: 50%;
+           margin-right: 0.4rem;
+       }
+
+       & p {
+           flex-basis: 100%;
+           flex-grow: 1;
+       }
+    }
+}
+
+.card-customers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    & img {
+        width: 6rem;
+        height: 6rem;
+        border-radius: 50%;
+    }
+}
+
+.card-posts {
+    padding: 0.4rem 0.6rem;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    & strong {
+        padding-top: 1.8rem;
+        padding-bottom: 1rem;
+        flex-basis: 100%;
+    }
+
+    & small {
+        flex-basis: 100%;
+    }
+}

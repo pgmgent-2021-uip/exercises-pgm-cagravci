@@ -1,14 +1,17 @@
 [
     {
         "author": "Adriaan",
-        "quote": "Id labore non nostrud anim pariatur anim."
+        "quote": "Id labore non nostrud anim pariatur anim.",
+        "img": "blog1.jpg"
     },
     {
         "author": "Benedikte",
-        "quote": "Qui et ex cupidatat nostrud minim velit consequat officia laborum ea irure."
+        "quote": "Qui et ex cupidatat nostrud minim velit consequat officia laborum ea irure.",
+        "img": "blog1.jpg"
     },
     {
         "author": "Cagri",
-        "quote": "Qui et ex cupidatat nostrud minim velit consequat officia laborum ea irure."
+        "quote": "Qui et ex cupidatat nostrud minim velit consequat officia laborum ea irure.",
+        "img": "blog1.jpg"
     }
 ]
