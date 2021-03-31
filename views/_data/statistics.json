@@ -1,0 +1,14 @@
+[
+    {
+        "value": "+1m",
+        "type": "kilometer"
+    },
+    {
+        "value": "+50 000",
+        "type": "routes"
+    },
+    {
+        "value": "+100",
+        "type": "cities"
+    }
+]
