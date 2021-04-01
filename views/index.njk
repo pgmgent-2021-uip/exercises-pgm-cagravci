@@ -40,9 +40,9 @@ eleventyNavigation:
     <section class="container">
         <h2>Features</h2>
 
-        <ul class="h-list">
+        <ul class="cards-features">
             {% for feature in collections.features %}
-                    <li class="h-list__item card-features">
+                    <li class="">
                         <img 
                             class=""
                             src="{{ feature.data.img }}"/>
@@ -64,9 +64,9 @@ eleventyNavigation:
     <section class="container">
         <h2>Quotes</h2>
 
-        <ul class="h-list">
+        <ul class="cards-quotes">
             {% for quote in quotes %}
-                    <li class="h-list__item card-quotes">
+                    <li class="">
                         <blockquote>
                             "{{ quote.quote }}"
                         </blockquote>
@@ -87,9 +87,9 @@ eleventyNavigation:
     <section class="container">
         <h2>Klanten</h2>
 
-        <ul class="h-list">
+        <ul class="cards-customers">
             {% for customer in customers %}
-                    <li class="h-list__item--xl card-customers">
+                    <li class="">
                         <a href="#">
                             <img 
                                 src="/assets/img/{{ customer.img }}"/>
@@ -104,9 +104,9 @@ eleventyNavigation:
     <section class="container">
         <h2>Blog</h2>
 
-        <ul class="h-list">
+        <ul class="cards-posts">
             {% for blog in blogs %}
-                    <li class="h-list__item card-posts">
+                    <li class="">
                         <img 
                             class=""
                             src="/assets/img/{{ blog.img }}"/>
