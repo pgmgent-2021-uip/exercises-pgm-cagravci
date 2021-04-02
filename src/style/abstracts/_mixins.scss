@@ -34,7 +34,7 @@
 @mixin h-list ($columns) {
   @include flexer(flex-end, space-between, wrap);
 
-  & li {
+  > li {
     flex-basis: 100%/$columns;
   }
 }
