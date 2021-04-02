@@ -1,0 +1,21 @@
+form {
+    width: 50rem;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+  fieldset{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-wrap: wrap;
+
+      input {
+        flex-basis: 100%;
+      }
+
+      textarea {
+          flex-basis: 100%;
+      }
+  }
+}

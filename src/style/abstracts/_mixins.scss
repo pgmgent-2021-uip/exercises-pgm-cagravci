@@ -5,15 +5,15 @@
   padding-top: $padding-top;
   margin: 0;
 
-  > #{$child} {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
+  >#{$child} {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 
-      object-fit: cover;
-      object-position: center;
+    object-fit: cover;
+    object-position: center;
   }
 }
 
@@ -24,13 +24,17 @@
   text-transform: uppercase;
 }
 
-@mixin h-list ($columns) {
+@mixin flexer ($aligner, $justifyer, $wrapper) {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: flex-end;
+  flex-wrap: $wrapper;
+  justify-content: $justifyer;
+  align-items: $aligner;
+}
+
+@mixin h-list ($columns) {
+  @include flexer(flex-end, space-between, wrap);
 
   & li {
-      flex-basis: 100%/$columns;
+    flex-basis: 100%/$columns;
   }
 }

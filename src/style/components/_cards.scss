@@ -2,12 +2,9 @@
     @include h-list(4);
 
     >li {
+        @include flexer(center, center, wrap);
         padding: 0.4rem 0.6rem;
         text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
 
         & strong {
             padding-top: 1.8rem;
@@ -20,7 +17,7 @@
         }
 
         & a {
-            margin: 1.2rem 1.6rem;
+            margin: 1.2rem 1.6rem; 
             border: 3px solid #ff0000;
             padding: 0.8rem 1rem;
         }
@@ -31,6 +28,7 @@
     @include h-list(4);
 
     >li {
+        flex-grow: 1;
         padding: 0.4rem 0.6rem;
 
         & blockquote {
@@ -42,9 +40,7 @@
         }
 
         & figcaption {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+            @include flexer(center, space-between, nowrap);
 
             & img {
                 width: 2rem;
@@ -65,9 +61,7 @@
     @include h-list(5);
 
     >li {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flexer(center, center, nowrap);
         margin-bottom: 1rem;
 
         & img {
@@ -82,16 +76,14 @@
     @include h-list(4);
 
     >li {
-        padding: 0.4rem 0.6rem;
+        @include flexer(center, space-between, wrap);
+        flex-grow: 1;
+        padding: $spacing-sm $spacing-base;
         text-align: justify;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
 
         & strong {
-            padding-top: 1.8rem;
-            padding-bottom: 1rem;
+            padding-top: $spacing-md;
+            padding-bottom: $spacing-base;
             flex-basis: 100%;
         }
 
