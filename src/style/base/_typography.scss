@@ -12,7 +12,7 @@ h1,
 h2,
 h3,
 p,
-small{
+small {
   color: $titel-green;
 }
 
@@ -35,4 +35,15 @@ strong {
   display: block;
   margin-bottom: $spacing-sm;
   color: $gray;
+}
+
+.page-title {
+  @include flexer (center, flex-start, wrap);
+  width: 50%;
+  margin: 0 auto;
+
+  h1 {
+    flex-basis: 100%;
+    margin-bottom: $spacing-sm;
+  }
 }

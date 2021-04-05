@@ -1,8 +1,8 @@
 .contact-form {
-  @include flexer(center, center, nowrap);
+  width: 50%;
+  margin: 0 auto;
 
   > form {
-    flex-basis: 60%;
 
     fieldset {
       border: none;

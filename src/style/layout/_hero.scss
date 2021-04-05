@@ -13,10 +13,13 @@
     }
 
     &__content {
+        @include flexer(center, center, wrap);
+        align-content: center;
         background-color: $whitish;
         padding: $spacing-base $spacing-lg;
 
         &__list {
+            margin-top: $spacing-lg;
             list-style: none;
             padding: 0;
 

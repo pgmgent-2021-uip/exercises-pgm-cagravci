@@ -1,0 +1,33 @@
+.about {
+    text-align: center;
+    @include flexer(center, center, wrap);
+
+    h1 {
+        flex-basis: 100%;
+    }
+
+    p {
+        flex-basis: 50%;
+        text-align: justify;
+    }
+
+    ul{
+        flex-basis: 100%;
+        margin: $spacing-lg 0 $spacing-base;
+        @include flexer(center, center, nowrap);
+
+        li {
+            margin-right: $spacing-base;
+        }
+    }
+
+    img {
+        margin: $spacing-lg 0;
+        flex-basis: 50%;
+    }
+
+    h2 {
+        flex-basis: 100%;
+        margin-bottom: $spacing-sm;
+    }
+}
