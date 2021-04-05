@@ -1,32 +1,31 @@
 ---
-layout: hero-image
-title: Contact
-subtitle: dit is een contact pagina
+layout: contact
+title: Contact us
+subtitle:
 eleventyNavigation:
     key: Contact
     order: 5
 ---
+<div class="contact-form">
+    <form action="/">
+        <fieldset>
+            <label for="email">Uw email</label>
 
-<h1>Contact us</h1>
+            <input type="text" name="email" id="email" placeholder="user@example.com...">
+        </fieldset>
 
-<form>
-    <fieldset>
-        <label for="email">Uw email</label>
+        <fieldset>
+            <label for="subj">Onderwerp</label>
 
-        <input type="text" name="email" id="email">
-    </fieldset>
+            <input type="text" name="subj" id="subj" placeholder="Nieuwe route....">
+        </fieldset>
 
-    <fieldset>
-        <label for="subj">Onderwerp</label>
+        <fieldset>
+            <label for="content">Inhoud</label>
 
-        <input type="text" name="subj" id="subj">
-    </fieldset>
+            <textarea name="content" id="content" placeholder="Omschrijf de reden van contact..."></textarea>
+        </fieldset>
 
-    <fieldset>
-        <label for="content">Inhoud</label>
-
-        <textarea name="content" id="content"></textarea>
-    </fieldset>
-
-    <button type="submit">verzenden</button>
-</form>
+        <button type="submit" class="btn--primary">verzenden</button>
+    </form>
+</div>

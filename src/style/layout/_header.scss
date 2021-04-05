@@ -1,34 +1,40 @@
-.navbar {
-    position: sticky;
-    top: 0;
+header {
+    background-color: $main-green;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: $large-container;
-    margin: 0 auto;
+    .navbar {
+        position: sticky;
+        top: 0;
+        @include flexer (center, space-between, nowrap);
+        max-width: $large-container;
+        margin: 0 auto;
 
-    .navbar__logo {
-        margin: 1rem;
-    }
-
-    .navbar__list {
-        list-style: none;
-        display: flex;
-        text-transform: uppercase;
-
-        li {
+        .navbar__logo {
             margin: 1rem;
+        }
 
-            &:last-child {
-                margin-left: 0;
-            }
+        .navbar__list {
+            list-style: none;
+            display: flex;
+            text-transform: uppercase;
 
-            a {
-                @include fancy-text($text-sm);
+            li {
+                margin: 1rem;
 
-                &.active {
-                    font-weight: bold;
+                &:last-child {
+                    margin-left: 0;
+                }
+
+                a {
+                    @include fancy-text($text-sm);
+                    color: $whitish;
+
+                    &.active {
+                        font-weight: bold;
+                    }
+
+                    strong {
+                        color: $brown;
+                    }
                 }
             }
         }

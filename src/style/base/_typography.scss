@@ -8,6 +8,24 @@ h3 {
   font-size: 2rem;
 }
 
+h1,
+h2,
+h3,
+p,
+small{
+  color: $titel-green;
+}
+
+strong {
+  color: $main-green;
+}
+
+.link {
+  color: $brown;
+  text-decoration: underline;
+  font-size: $text-sm;
+}
+
 .base-title {
   font-size: $text-md;
 }

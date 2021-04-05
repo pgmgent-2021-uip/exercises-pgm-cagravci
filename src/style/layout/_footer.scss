@@ -1,11 +1,28 @@
 .footer {
     margin-top: $spacing-lg;
     text-align: center;
+    background-color: $whitish;
+    padding: $spacing-lg;
 
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    
+    @include flexer(flex-start, space-evenly, wrap);
 
+    > div {
+        flex-basis: 50%;
+
+        @include flexer(flex-start, center, wrap);
+
+        >strong {
+             flex-basis: 100%;
+             margin: $spacing-sm;
+        }
+
+        >a{
+            background-color: $main-green;
+            padding: $spacing-sm;
+        }
+
+        >small {
+            flex-basis: 50%;
+        }
+    }
 }

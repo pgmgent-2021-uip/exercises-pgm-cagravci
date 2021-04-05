@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - My Walking App</title>
+    <title>Contact us - My Walking App</title>
     <link rel="stylesheet" href="/assets/main.css" />
 </head>
 <body>
@@ -14,7 +14,6 @@
     <nav class="navbar">
         <a class="navbar__logo">
             <img src="/assets/img/logo.svg" />
-            <span>Website slogan</span>
         </a>
 
         <ul class="navbar__list">
@@ -69,65 +68,62 @@
         
 <img src="http://picsum.photos/1240/320" />
 
-<h1>Contact</h1>
-<small>dit is een contact pagina</small>
+<h1>Contact us</h1>
+<small></small>
 
 <br/>
 <br/>
 
 <div>
-    
-<h1>Contact us</h1>
+    <div class="contact-form">
+    <form action="/">
+        <fieldset>
+            <label for="email">Uw email</label>
 
-<form>
-    <fieldset>
-        <label for="email">Uw email</label>
+            <input type="text" name="email" id="email" placeholder="user@example.com...">
+        </fieldset>
 
-        <input type="text" name="email" id="email">
-    </fieldset>
+        <fieldset>
+            <label for="subj">Onderwerp</label>
 
-    <fieldset>
-        <label for="subj">Onderwerp</label>
+            <input type="text" name="subj" id="subj" placeholder="Nieuwe route....">
+        </fieldset>
 
-        <input type="text" name="subj" id="subj">
-    </fieldset>
+        <fieldset>
+            <label for="content">Inhoud</label>
 
-    <fieldset>
-        <label for="content">Inhoud</label>
+            <textarea name="content" id="content" placeholder="Omschrijf de reden van contact..."></textarea>
+        </fieldset>
 
-        <textarea name="content" id="content"></textarea>
-    </fieldset>
-
-    <button type="submit">verzenden</button>
-</form>
+        <button type="submit" class="btn--primary">verzenden</button>
+    </form>
 </div>
-
-
+</div>
     </main>
 
     
 
 
 <footer class="footer">
-    <a class="">
-        <img src="/assets/img/logo.svg" />
-        <span>Website slogan</span>
-    </a>
-
     <div>
+        <a href="/">
+            <img src="/assets/img/logo.svg" />
+        </a>
+
         <strong>A travelers blog</strong>
 
-        <small>our main focus is to provide high quality objective and informative traveling content from over the world</small>
+        <small>our main focus is to provide high quality objective and informative traveling content from over the
+            world</small>
     </div>
 
     <div>
-         <strong>Navigation</strong>
+        <strong>Navigation</strong>
         <ul>
             
             <li>
                 <a href="/">
                     
-                        Home
+                    Home
                     
                 </a>
             </li>
@@ -135,7 +131,7 @@
             <li>
                 <a href="/news/">
                     
-                        News
+                    News
                     
                 </a>
             </li>
@@ -143,7 +139,7 @@
             <li>
                 <a href="/features/gps/">
                     
-                        Features
+                    Features
                     
                 </a>
             </li>
@@ -151,7 +147,7 @@
             <li>
                 <a href="/about/">
                     
-                        About
+                    About
                     
                 </a>
             </li>
@@ -159,18 +155,20 @@
             <li>
                 <a href="/contact/">
                     
-                        <strong>
-                            Contact
-                        </strong>
+                    <strong>
+                        Contact
+                    </strong>
                     
                 </a>
             </li>
             
         </ul>
     </div>
-   
+
     Copyright 2021 @ Cagri Avci
 </footer>
+
+
 
 </body>
 </html>

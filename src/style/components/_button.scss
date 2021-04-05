@@ -5,7 +5,16 @@
     &--primary {
         border: none;
         padding: $spacing-base;
-        background-color: red;
+        background-color: $main-green;
+        color: $whitish;
+        border-radius: $radius-sm;
+    }
+
+    &--secondary {
+        border: none;
+        padding: $spacing-base;
+        background-color: $whitish;
+        color: $main-green;
         border-radius: $radius-sm;
     }
 }

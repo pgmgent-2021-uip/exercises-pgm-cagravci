@@ -2,35 +2,36 @@
 
 
 <footer class="footer">
-    <a class="">
-        <img src="/assets/img/logo.svg" />
-        <span>Website slogan</span>
-    </a>
-
     <div>
+        <a href="/">
+            <img src="/assets/img/logo.svg" />
+        </a>
+
         <strong>A travelers blog</strong>
 
-        <small>our main focus is to provide high quality objective and informative traveling content from over the world</small>
+        <small>our main focus is to provide high quality objective and informative traveling content from over the
+            world</small>
     </div>
 
     <div>
-         <strong>Navigation</strong>
+        <strong>Navigation</strong>
         <ul>
             {% for navItem in navPages %}
             <li>
                 <a href="{{ navItem.url }}">
                     {% if page.url === navItem.url %}
-                        <strong>
-                            {{ navItem.title }}
-                        </strong>
-                    {% else %}
+                    <strong>
                         {{ navItem.title }}
+                    </strong>
+                    {% else %}
+                    {{ navItem.title }}
                     {% endif %}
                 </a>
             </li>
             {% endfor %}
         </ul>
     </div>
-   
+
     Copyright {{ helpers.currentYear() }} @ Cagri Avci
 </footer>
+

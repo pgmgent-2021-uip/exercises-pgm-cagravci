@@ -1,15 +1,15 @@
 .cards-features {
     @include h-list(4);
+    margin-top: $spacing-base;
+    margin-bottom: $spacing-md;
 
     >li {
         @include flexer(center, center, wrap);
-        padding: 0.4rem 0.6rem;
         text-align: center;
 
         & strong {
-            padding-top: 1.8rem;
-            padding-bottom: 1rem;
             flex-basis: 100%;
+            margin: $spacing-sm;
         }
 
         & small {
@@ -17,41 +17,41 @@
         }
 
         & a {
-            margin: 1.2rem 1.6rem; 
-            border: 3px solid #ff0000;
-            padding: 0.8rem 1rem;
+            margin: $spacing-sm;
         }
     }
 }
 
 .cards-quotes {
     @include h-list(4);
+    margin-top: $spacing-base;
+    margin-bottom: $spacing-md;
 
     >li {
         flex-grow: 1;
-        padding: 0.4rem 0.6rem;
 
         & blockquote {
-            margin: 0;
-            margin-bottom: 1rem;
+            margin-bottom: $spacing-md;
             text-align: left;
-            border-left: solid 1px black;
-            padding: 0.4rem;
+            border-left: solid 1px $button-label;
+            padding-left: $spacing-sm;
+            color: $button-label-dark;
         }
 
         & figcaption {
             @include flexer(center, space-between, nowrap);
 
             & img {
-                width: 2rem;
-                height: 2rem;
+                width: $spacing-lg;
+                height: $spacing-lg;
                 border-radius: 50%;
-                margin-right: 0.4rem;
+                margin-right: $spacing-sm;
             }
 
             & p {
                 flex-basis: 100%;
                 flex-grow: 1;
+                color: $button-label-dark;
             }
         }
     }
@@ -59,14 +59,16 @@
 
 .cards-customers {
     @include h-list(5);
+    margin-top: $spacing-base;
+    margin-bottom: $spacing-md;
 
     >li {
         @include flexer(center, center, nowrap);
-        margin-bottom: 1rem;
+        margin-bottom: $spacing-base;
 
         & img {
-            width: 6rem;
-            height: 6rem;
+            width: $small-image;
+            height: $small-image;
             border-radius: 50%;
         }
     }
@@ -74,16 +76,18 @@
 
 .cards-posts {
     @include h-list(4);
+    margin-top: $spacing-base;
+    margin-bottom: $spacing-md;
 
     >li {
-        @include flexer(center, space-between, wrap);
+        @include flexer(center, center, wrap);
         flex-grow: 1;
-        padding: $spacing-sm $spacing-base;
+        margin: $spacing-sm $spacing-base;
         text-align: justify;
 
         & strong {
-            padding-top: $spacing-md;
-            padding-bottom: $spacing-base;
+            margin-top: $spacing-md;
+            margin-bottom: $spacing-base;
             flex-basis: 100%;
         }
 
