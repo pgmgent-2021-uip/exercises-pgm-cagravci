@@ -4,20 +4,16 @@ title: Artikels
 tags:
 subtitle: Hier komen alle artikels!
 allAuthors:
-    - Adriaan
-    - Benedikte
-    - Mina
-    - Bram
-    - Silke
-    - Cagri
+    - Cagri Cem Avci
 eleventyNavigation:
     key: News
     order: 2
 ---
 
-Hier komen alle artikels! Lorem ipsum!
-
-<ul>
+<h2>
+    Check our latest news!
+</h2>
+<ul class="news">
     {% for article in collections.news %}
         <li>
             <a href="{{ article.url }}">

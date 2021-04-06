@@ -1,7 +1,7 @@
 ---
 img: 'banner.jpg'
-title: Our app has a new feature!
-author: Adriaan Glibert - Cagri Avci
+title: Our app has a new feature! 2
+author: Cagri Avci
 ---
 
 ## h2 Heading
