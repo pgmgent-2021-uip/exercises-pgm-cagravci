@@ -16,31 +16,11 @@
 
       input {
         flex-basis: 100%;
-        border: $selected 1px solid;
-        background-color: $whitish;
-        border-radius: $radius-sm;
-        padding: $spacing-sm;
-
-        &::placeholder {
-          color: $button-label;
-        }
       }
 
       textarea {
         flex-basis: 100%;
-        border: $selected 1px solid;
-        background-color: $whitish;
-        border-radius: $radius-sm;
-        padding: $spacing-sm;
-
-        &::placeholder {
-          color: $button-label;
-        }
       }
-    }
-
-    button {
-      cursor: pointer;
     }
   }
 }
