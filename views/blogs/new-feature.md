@@ -1,6 +1,7 @@
 ---
-img: 'banner.jpg'
+img: gps.jpg
 title: Our app has a new feature! 2
+subtitle: "it's chinese new year this week. welcome to the year of the dog! weve taken a look at the 12 animals of the chinese zodiac and suggested a tur for each"
 author: Cagri Avci
 ---
 

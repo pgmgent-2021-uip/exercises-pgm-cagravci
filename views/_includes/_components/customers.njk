@@ -1,0 +1,16 @@
+{% if customers | length  %}
+    <section class="container">
+        <h2>Customers</h2>
+
+        <ul class="cards-customers">
+            {% for customer in customers %}
+                    <li class="">
+                        <a href="#">
+                            <img 
+                                src="/assets/img/{{ customer.img }}"/>
+                        </a>
+                    </li>
+            {% endfor %}
+        <ul>
+    </section>
+{% endif %}

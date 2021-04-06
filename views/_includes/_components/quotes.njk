@@ -1,0 +1,22 @@
+{% if quotes | length  %}
+    <section class="container">
+        <h2>Quotes</h2>
+
+        <ul class="cards-quotes">
+            {% for quote in quotes %}
+                    <li class="">
+                        <blockquote>
+                            "{{ quote.quote }}"
+                        </blockquote>
+                        
+                        <figcaption>
+                            <img
+                                src="/assets/img/{{ quote.img }}"
+                                class=""/>
+                            <p>~ {{ quote.author }}</p>
+                        </figcaption>
+                    </li>
+            {% endfor %}
+        <ul>
+    </section>
+{% endif %}

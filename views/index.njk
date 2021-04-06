@@ -36,86 +36,10 @@ eleventyNavigation:
     </article>
 </section>
 
-{% if collections.features | length %}
-    <section class="container">
-        <h2>Features</h2>
+{% include "_components/features.njk" %}
 
-        <ul class="cards-features">
-            {% for feature in collections.features %}
-                    <li class="">
-                        <img 
-                            class=""
-                            src="{{ feature.data.img }}"/>
-                        
-                        <strong>{{ feature.data.title }}</strong>
+{% include "_components/quotes.njk" %}
 
-                        <small>{{ feature.data.subtitle }}</small>
+{% include "_components/customers.njk" %}
 
-                        <a href="{{ feature.url }}" class="link">
-                            {{ feature.data.title }}
-                        </a>
-                    </li>
-            {% endfor %}
-        </ul>
-    </section>
-{% endif %}
-
-{% if quotes | length  %}
-    <section class="container">
-        <h2>Quotes</h2>
-
-        <ul class="cards-quotes">
-            {% for quote in quotes %}
-                    <li class="">
-                        <blockquote>
-                            "{{ quote.quote }}"
-                        </blockquote>
-                        
-                        <figcaption>
-                            <img
-                                src="/assets/img/{{ quote.img }}"
-                                class=""/>
-                            <p>~ {{ quote.author }}</p>
-                        </figcaption>
-                    </li>
-            {% endfor %}
-        <ul>
-    </section>
-{% endif %}
-
-{% if customers | length  %}
-    <section class="container">
-        <h2>Klanten</h2>
-
-        <ul class="cards-customers">
-            {% for customer in customers %}
-                    <li class="">
-                        <a href="#">
-                            <img 
-                                src="/assets/img/{{ customer.img }}"/>
-                        </a>
-                    </li>
-            {% endfor %}
-        <ul>
-    </section>
-{% endif %}
-
-{% if blogs | length  %}
-    <section class="container">
-        <h2>Blog</h2>
-
-        <ul class="cards-posts">
-            {% for blog in blogs %}
-                    <li class="">
-                        <img 
-                            class=""
-                            src="/assets/img/{{ blog.img }}"/>
-                        
-                        <strong>{{ blog.title }}</strong>
-
-                        <small>{{ blog.subtitle }}</small>
-                    </li>
-            {% endfor %}
-        <ul>
-    </section>
-{% endif %}
+{% include "_components/blogs.njk" %}
