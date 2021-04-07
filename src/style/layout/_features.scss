@@ -2,4 +2,21 @@
     &__btn {
         margin-top: 1rem;
     }
+
+    .feature {
+        margin: $spacing-md auto;
+        width: 50%;
+        @include flexer (center, space-between, nowrap);
+
+        &--left{
+            flex-basis: 50%;
+        }
+
+        &--right {
+            flex-basis: 45%;
+            background-color: $whitish;
+            padding: $spacing-lg;
+            border-radius: $radius-base;
+        }
+    }
 }

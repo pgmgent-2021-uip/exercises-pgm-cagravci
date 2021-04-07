@@ -1,24 +1,22 @@
 .about {
-    text-align: center;
-    @include flexer(center, center, wrap);
-
-    h1 {
-        flex-basis: 100%;
-    }
+    margin: 0  auto;
+    width: 50%;
+    @include flexer(center, flex-start, wrap);
 
     p {
         flex-basis: 50%;
-        text-align: center;
+        text-align: justify;
+        margin:$spacing-sm 0 $spacing-lg;
     }
 
     ul{
         flex-basis: 100%;
         margin: $spacing-lg 0 $spacing-base;
-        @include flexer(center, center, nowrap);
+        @include flexer(center, flex-start, nowrap);
 
         li {
             margin-right: $spacing-base;
-
+            text-align: center;
             @include flexer (center, center, wrap);
 
             strong {
@@ -27,13 +25,15 @@
         }
     }
 
-    img {
-        margin: $spacing-lg 0;
-        flex-basis: 50%;
-    }
+    &--h-layout {
+        @include flexer(center, space-between, nowrap);
 
-    h2 {
-        flex-basis: 100%;
-        margin-bottom: $spacing-sm;
+        img {
+            flex-basis: 50%;
+        }
+
+        div {
+            flex-basis:40%;
+        }
     }
 }
