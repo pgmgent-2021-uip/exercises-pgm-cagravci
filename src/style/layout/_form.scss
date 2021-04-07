@@ -6,7 +6,7 @@
 
     fieldset {
       border: none;
-      @include flexer(center, flex-start, wrap);
+      @include flexer(center, flex-start, wrap, auto);
       padding: $spacing-sm 0;
 
       label {

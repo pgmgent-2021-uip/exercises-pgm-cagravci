@@ -24,17 +24,13 @@
   text-transform: uppercase;
 }
 
-@mixin flexer ($aligner, $justifyer, $wrapper) {
+@mixin flexer ($aligner, $justifyer, $wrapper, $columns) {
   display: flex;
   flex-wrap: $wrapper;
   justify-content: $justifyer;
   align-items: $aligner;
-}
-
-@mixin h-list ($columns) {
-  @include flexer(flex-end, space-between, wrap);
 
   > li {
-    flex-basis: 100%/$columns;
+    flex-basis: $columns;
   }
 }

@@ -16,6 +16,10 @@ small {
   color: $titel-green;
 }
 
+h2{
+  margin: $spacing-md 0 $spacing-base;
+}
+
 strong {
   color: $main-green;
 }
@@ -38,7 +42,7 @@ strong {
 }
 
 .page-title {
-  @include flexer (center, flex-start, wrap);
+  @include flexer (center, flex-start, wrap, auto);
   width: 50%;
   margin: 0 auto;
 

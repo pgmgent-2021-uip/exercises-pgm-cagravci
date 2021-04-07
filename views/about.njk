@@ -8,22 +8,23 @@ eleventyNavigation:
 ---
 <p>An energetic team that likes to enjoy outdoor walks and get some fresh air while discovering new places around the world!</p>
 
-<ul>
-    {% for statistic in statistics %}
-        <li>
-            <strong>{{ statistic.value }}</strong>
-            <small>{{ statistic.type }}</small>
-        </li>
-    {% endfor %}
-</ul>
 
 <div class="about--h-layout">
-    <img src="/assets/img/walkingpad.jpg" alt="">
+    <img src="/assets/img/about-us.jpg" alt="">
     
     <div>
-         <h2>What makes us different?</h2>
+        <h2>What makes us different?</h2>
 
         <p>Wij als een team gaan persoonlijk naar alle routes en maken gebruik van een top feedback structuur om veranderingen te implementeren op de routes. We hebben hoge engagement met de lokale bevoegdheden. Dit verhoogd de participatie van deze routes. Wij investeren niet alleen in onze app maar ook in onze gebruikers door een betere ervaring te geven.</p>
+        
+        <ul>
+        {% for statistic in statistics %}
+            <li>
+                <strong>{{ statistic.value }}</strong>
+                <small>{{ statistic.type }}</small>
+            </li>
+        {% endfor %}
+        </ul>
     </div>
 </div>
 

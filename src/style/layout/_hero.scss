@@ -13,7 +13,7 @@
     }
 
     &__content {
-        @include flexer(center, center, wrap);
+        @include flexer(center, center, wrap, auto);
         align-content: center;
         background-color: $whitish;
         padding: $spacing-base $spacing-lg;

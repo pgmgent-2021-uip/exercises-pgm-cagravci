@@ -1,4 +1,31 @@
 .blogs {
     margin: 0 auto;
     width: 50%;
+
+    .blog {
+        h2,
+        h3{
+            margin: $spacing-lg 0 $spacing-base;
+        }
+
+        p {
+            margin: $spacing-base 0 $spacing-md;
+            color: $black;
+        }
+
+        ol {
+            margin-left: $spacing-base;
+        }
+
+        ul {
+             li {
+            margin: $spacing-sm 0;
+            background-color: rgba(241, 236, 223, 0.5);
+            padding: $spacing-sm;
+            border-radius: $radius-sm;
+            width: max-content;
+        }
+        }
+       
+    }
 }

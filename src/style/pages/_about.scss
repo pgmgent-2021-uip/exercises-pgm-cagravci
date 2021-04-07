@@ -1,7 +1,7 @@
 .about {
     margin: 0  auto;
     width: 50%;
-    @include flexer(center, flex-start, wrap);
+    @include flexer(center, flex-start, wrap, auto);
 
     p {
         flex-basis: 50%;
@@ -9,24 +9,8 @@
         margin:$spacing-sm 0 $spacing-lg;
     }
 
-    ul{
-        flex-basis: 100%;
-        margin: $spacing-lg 0 $spacing-base;
-        @include flexer(center, flex-start, nowrap);
-
-        li {
-            margin-right: $spacing-base;
-            text-align: center;
-            @include flexer (center, center, wrap);
-
-            strong {
-                flex-basis: 100%;
-            }
-        }
-    }
-
     &--h-layout {
-        @include flexer(center, space-between, nowrap);
+        @include flexer(center, space-between, nowrap, auto);
 
         img {
             flex-basis: 50%;
@@ -34,6 +18,22 @@
 
         div {
             flex-basis:40%;
+
+            ul{
+                flex-basis: 100%;
+                margin: $spacing-lg 0 $spacing-base;
+                @include flexer(center, center, nowrap, auto);
+        
+                li {
+                    margin-right: $spacing-base;
+                    text-align: center;
+                    @include flexer (center, center, wrap, auto);
+        
+                    strong {
+                        flex-basis: 100%;
+                    }
+                }
+            }
         }
     }
 }

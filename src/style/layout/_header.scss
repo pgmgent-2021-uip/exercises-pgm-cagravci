@@ -4,7 +4,7 @@ header {
     .navbar {
         position: sticky;
         top: 0;
-        @include flexer (center, space-between, nowrap);
+        @include flexer (center, space-between, nowrap, auto);
         max-width: $large-container;
         margin: 0 auto;
 

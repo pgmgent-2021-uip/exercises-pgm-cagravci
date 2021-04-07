@@ -4,12 +4,12 @@
     background-color: $whitish;
     padding: $spacing-lg;
 
-    @include flexer(flex-start, space-evenly, wrap);
+    @include flexer(flex-start, space-evenly, wrap, auto);
 
     > div {
         flex-basis: 50%;
 
-        @include flexer(flex-start, center, wrap);
+        @include flexer(flex-start, center, wrap, auto);
 
         >strong {
              flex-basis: 100%;

@@ -20,8 +20,6 @@ Below are some simple “Petiquette” guidelines to remember as you get ready t
 
 2. Keep your dog on a leash. This one important guideline helps to ensure that other hikers will feel comfortable when they meet you on the trail. It also prevents your dog from chasing wildlife and reduces the habitat damage that occurs when dogs run off the trail. Dogs can leave behind a predator scent that disrupts wildlife and may hinder nesting and feeding activities.
 
-Keeping your dog on a leash also helps to ensure his safety, since the leash keeps him under control and by your side. Unleashed dogs can quickly run off when tracking a scent and may disappear from your view very quickly. Always use a leash so that you and your dog will finish your hike together safely and can hike again at another time.
-
 3. Plan for your dog’s needs on the trail as well as your own. Be sure to pack food, water, and accessories that will keep your dog energized, hydrated, and comfortable. Check out our gear list for hiking with dogs. And remember to pre-treat your dog with heartworm preventative medication as well as insecticides to prevent flea and tick infestation.
 
 4. Practice Leave No Trace ethics and clean up your dog’s waste. Either carry along a small spade and bury the waste or pack it out with you in plastic bags. Dog waste contains fecal coliform bacteria, which can cause disease and pollution. Dogs can also carry salmonella and giardia.

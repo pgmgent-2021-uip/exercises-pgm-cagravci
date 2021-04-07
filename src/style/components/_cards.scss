@@ -1,9 +1,14 @@
 .cards-features {
-    @include h-list(4);
+    @include flexer(flex-end, space-between, nowrap, 25%);
 
     >li {
-        @include flexer(center, center, wrap);
+        @include flexer(center, center, wrap, auto);
         text-align: center;
+
+        img {
+            width: 50%;
+            margin-bottom: $spacing-md;
+        }
 
         & strong {
             flex-basis: 100%;
@@ -21,7 +26,7 @@
 }
 
 .cards-quotes {
-    @include h-list(4);
+    @include flexer(center, center, wrap, 30%);
 
     >li {
         flex-grow: 1;
@@ -35,7 +40,7 @@
         }
 
         & figcaption {
-            @include flexer(center, space-between, nowrap);
+            @include flexer(center, space-between, nowrap, auto);
 
             & img {
                 width: $spacing-lg;
@@ -54,10 +59,10 @@
 }
 
 .cards-customers {
-    @include h-list(5);
+    @include flexer(center, space-between, wrap, 20%);
 
     >li {
-        @include flexer(center, center, nowrap);
+        @include flexer(center, center, nowrap, 1);
         margin-bottom: $spacing-base;
 
         & img {
@@ -69,18 +74,17 @@
 }
 
 .cards-posts {
-    @include h-list(4);
+    @include flexer(flex-start, center, wrap, 30%);
 
     >li {
-        @include flexer(center, flex-start, wrap);
+        @include flexer(center, flex-start, wrap, auto);
         flex-grow: 1;
         margin: $spacing-sm $spacing-base;
         text-align: justify;
 
-        & strong {
+        & a {
             margin-top: $spacing-md;
-            margin-bottom: $spacing-base;
-            flex-basis: 100%;
+            margin-bottom: $spacing-sm;
         }
 
         & small {

@@ -1,15 +1,16 @@
 .features {
+    margin: $spacing-md auto;
+    width: 50%;
+    
     &__btn {
         margin-top: 1rem;
     }
 
     .feature {
-        margin: $spacing-md auto;
-        width: 50%;
-        @include flexer (center, space-between, nowrap);
+        @include flexer (center, space-between, nowrap, 50%);
 
         &--left{
-            flex-basis: 50%;
+            flex-basis: 35%;
         }
 
         &--right {
