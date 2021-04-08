@@ -20,19 +20,7 @@ eleventyNavigation:
             What do we offer?
         </h2>
 
-        <ul class="hero__content__list">
-            {% for hero_item in hero_list %}
-                <li class="hero__content__list__item">
-                    <small class="detail-title">{{ hero_item.small }}</small>
-
-                    <strong class="base-title">{{ hero_item.title }}</strong>
-
-                    <p class="hero__content__list__item__text">
-                        {{ hero_item.subtitle }}
-                    </p>
-                </li>
-            {% endfor %}
-        </ul>
+        {% include "_components/hero_list.njk" %}
     </article>
 </section>
 

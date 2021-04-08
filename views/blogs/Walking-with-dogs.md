@@ -8,7 +8,7 @@ highlight: true
 
 ## Hiking With Dogs: Tips For Hitting the Trail
 
-![This is a banner](/assets/img/walking_dog.jpg)
+![walking with dog](/assets/img/walking_dog.jpg)
 
 Hiking is fantastic exercise and a perfect way to enjoy nature. So, it’s understandable that you would want your dog to join you on the trail. Dogs make great companions and watching them revel in the sights, sounds, and smells of nature is invigorating.
 
@@ -20,7 +20,7 @@ However, just as you wouldn’t head out for a hike in dress shoes, there are co
 
 First, don’t always assume your dog is welcome to hike everywhere you are. For example, you might wonder,  “are dogs allowed in National Parks?” Thankfully, many National Parks do welcome dogs, but many have restrictions about dogs on the trails. Always check if your dog is allowed to accompany you before you set out on a hike. If not, you might find yourself encountering a stiff fine, not to mention the ire of fellow hikers. Banning dogs from parks may seem arbitrary, but keep in mind that your dog can have an impact on the environment by putting wild animals at risk and invading delicate ecosystems.
 
-![This is a banner](/assets/img/walking_dog2.jpg)
+![Going up the mountains](/assets/img/walking_dog2.jpg)
 
 It’s your responsibility to learn about the rules of each place you take your dog before you hit the trail. When it comes to National Parks, there are general pet rules, but each park may have its own additional rules as well. Other wilderness areas, like State Parks and local forests, will also have their own regulations.
 
