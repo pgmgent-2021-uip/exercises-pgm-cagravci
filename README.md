@@ -1,4 +1,4 @@
-# My Walking App
+# My Walking App | Cagri Cem Avci
 
 A landing page for a walking app made with [Eleventy](https://www.11ty.dev/).
 ## Installation
